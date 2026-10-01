@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me? 💍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="stars"></div>
+        <div class="floating-hearts-container"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Proposal Screen -->
+        <div class="screen active" id="proposalScreen">
+            <div class="proposal-card">
+
+                <div class="heart-animation">💓</div>
+
+                <h1 class="proposal-title">
+                    Will you marry me?
+                </h1>
+
+                <p class="proposal-emoji">❤️</p>
+
+                <div class="button-container">
+                    <button class="btn btn-yes" id="yesBtn">
+                        💍 Yes, Marry Me
+                    </button>
+
+                    <button class="btn btn-no" id="noBtn">
+                        ❌ No
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Rejection Screen -->
+        <div class="screen" id="rejectionScreen">
+            <div class="rejection-card">
+
+                <p class="rejection-emoji">😏</p>
+
+                <p class="rejection-message">
+                    Chesesko Buzzi Paapa😏
+                </p>
+
+                <p class="rejection-subtext">
+                    Neeku vere option ivvalanukotle 😂
+                </p>
+
+                <p class="rejection-final">
+                    Venakki velli once 'Marry Me' select cheyyi ❤️
+                </p>
+
+                <button class="btn btn-back" id="backBtn">
+                    ← Venakki Vellu
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- Celebration Screen -->
+        <div class="screen" id="celebrationScreen">
+
+            <div class="confetti-container"></div>
+
+            <div class="celebration-card">
+
+                <h1 class="celebration-title">
+                    I LOVE YOU PAAPA ❤️🥹
+                </h1>
+
+                <p class="celebration-subtitle">
+                    You just made me the happiest person alive 🥹❤️
+                </p>
+
+                <button class="btn btn-back" id="celebrationBackBtn">
+                    ← Go Back
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Music Button -->
+    <div class="audio-control">
+        <button
+            id="musicToggle"
+            class="music-btn"
+            title="Toggle Music"
+            type="button"
+        >
+            <span class="music-icon">🔊</span>
+        </button>
+    </div>
+
+
+    <!-- Optional Music -->
+    <!-- Put your music file in the same folder and name it music.mp3 -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
